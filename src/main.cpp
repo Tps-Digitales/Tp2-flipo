@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <util/delay.h>
 
 #define bot1 ((PD4>>4)& 0X01)
 #define bot2 ((PD5>>5)& 0X01)
@@ -9,7 +10,7 @@
 #define apagar(PORT, PIN) (PORT &= 1 << PIN)
 
 char FLAG_BT1=0;
-
+char cont=0;
 int main()
  
 DDRD &= ~(1 << PD4);
@@ -30,3 +31,5 @@ while(1)
 if (bot1==0);
 
 FLAG_BT1=1;
+
+Cont++;
