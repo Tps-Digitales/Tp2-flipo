@@ -8,7 +8,7 @@
 #define prender(PORT, PIN) (PORT |= 1 << PIN)
 #define apagar(PORT, PIN) (PORT &= 1 << PIN)
 
-
+char FLAG_BT1=0;
 
 int main()
  
@@ -27,4 +27,6 @@ DDRB |= (1 << PB4);
 
 while(1)
 {
+if (bot1==0);
 
+FLAG_BT1=1;
